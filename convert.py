@@ -25,4 +25,4 @@ if __name__=='__main__':
     try:
         convert(args.domain,args.file)
     except:
-        print("Error!! \nuseage:python3 convert.py -d github.com -f cookie.txt\nPlease set Second-level domain")
+        print("Error!! \nusage:python3 convert.py -d github.com -f cookie.txt\nPlease set Second-level domain")
