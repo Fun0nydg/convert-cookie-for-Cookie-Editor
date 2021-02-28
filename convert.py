@@ -9,7 +9,7 @@ def convert(domain,file):
     with open(file,'r+') as f:
         string=f.read()
     string1=string+';'
-    key=re.findall(r"[\w\-\:]+(?==[\w\-])",string1)
+    key=re.findall(r"[\w\-\:\=]+(?==[\w\-])",string1)
     values=re.findall(r"=(.*?);",string1)
     for i in range(len(key)):
         base["name"]=key[i]
