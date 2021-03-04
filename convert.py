@@ -11,8 +11,8 @@ def convert(domain,file):
     count=string.count(';')+1
     string=string.split(';')
     for i in range(count):
-        name=string[i].split('=')[0].lstrip()
-        value=string[i].split('=')[1].lstrip()
+        name=string[i].split('=',1)[0].lstrip()
+        value=string[i].split('=',1)[1].lstrip()
         base['value']=value
         base['name']=name
         base['domain']=domain
